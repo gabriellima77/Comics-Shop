@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Comic.css';
 
 export default class Comic extends React.Component {
   constructor(props) {
@@ -25,12 +26,13 @@ export default class Comic extends React.Component {
 
     return (
       <div
-        className="card"
+        className="comic"
         onMouseEnter={this.eventHover}
         onMouseLeave={this.eventHover}
+        title={title}
       >
         <div className={viewClass}>
-          <p className="view-txt">View</p>
+          <p className="view-txt">Ver mais</p>
         </div>
         <img src={url} alt={title} />
         <p className="title">{title}</p>
