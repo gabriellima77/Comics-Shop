@@ -19,13 +19,14 @@ export default class Comic extends React.Component {
   };
 
   render() {
-    const { title, url } = this.props;
+    const { title, url, putModal } = this.props;
     const { isHoving } = this.state;
     let viewClass = 'view-line';
     if (isHoving) viewClass += ' active';
 
     return (
       <div
+        onClick={putModal}
         className="comic"
         onMouseEnter={this.eventHover}
         onMouseLeave={this.eventHover}

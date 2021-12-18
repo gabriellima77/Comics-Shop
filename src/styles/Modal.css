@@ -1,0 +1,114 @@
+.cover {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal {
+  position: absolute;
+  width: 40%;
+  height: 252px;
+  background-color: white;
+}
+
+.modal-bar {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-bar button {
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  top: -25px;
+  right: -20px;
+  color: red;
+  user-select: none;
+}
+
+.comic-box {
+  display: flex;
+}
+
+.text-box {
+  width: calc(100% - 168px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comic-title {
+  width: 90%;
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10%;
+}
+
+.creators {
+  width: 100%;
+  max-height: 100px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.creators p {
+  margin-left: 10%;
+}
+
+.creators p,
+.date,
+.info {
+  width: 80%;
+  font-size: 12px;
+  color: rgb(29, 29, 29);
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description {
+  padding: 0 10px;
+  font-size: 14px;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 100px;
+}
+
+.price {
+  margin-right: 10px;
+}
+
+.bottom-box {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.date {
+  margin-bottom: 10px;
+}
+
+.buy-box {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
