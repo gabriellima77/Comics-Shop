@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
+import Buy from './pages/Buy';
 import Characters from './pages/Characters';
 import Comics from './pages/Comics';
 import Home from './pages/Home';
 
 function App() {
-  const [page, setPage] = useState('home');
+  // Está começando em quadrinhos, para mostrar inicialmente o requisito.
+  const [page, setPage] = useState('comics');
+  const [buyContent, setBuyContent] = useState('');
 
   const switchPage = (page) => {
     switch (page) {
@@ -15,7 +18,9 @@ function App() {
       case 'characters':
         return <Characters />;
       case 'comics':
-        return <Comics />;
+        return <Comics setBuyContent={setBuyContent} setPage={setPage} />;
+      case 'buy':
+        return <Buy content={buyContent} />;
       default:
         break;
     }

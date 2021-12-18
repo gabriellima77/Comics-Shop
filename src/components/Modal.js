@@ -1,9 +1,8 @@
 import React from 'react';
 import '../styles/Modal.css';
 import BuyBtn from './BuyBtn';
-import getData from './FetchData';
 
-export default function Modal({ content, setHasModal }) {
+export default function Modal({ content, setHasModal, event, setBuyContent }) {
   const closeModal = (e) => {
     if (e.target.nodeName !== 'SECTION' && e.target.nodeName !== 'BUTTON')
       return;
@@ -33,7 +32,6 @@ export default function Modal({ content, setHasModal }) {
     const dateObj = new Date(date.date);
     const result = dateObj.toLocaleDateString('pt-BR', { timeZone: 'UTC' });
     if (result === 'Invalid Date') return;
-    console.log(result);
     return result;
   };
 
@@ -41,7 +39,6 @@ export default function Modal({ content, setHasModal }) {
   const { path, extension } = thumbnail;
   const imgUrl = path + '/portrait_fantastic.' + extension;
   const date = getDate();
-  console.log(content);
 
   return (
     <section onClick={closeModal} className="cover">
@@ -62,7 +59,12 @@ export default function Modal({ content, setHasModal }) {
             <div className="creators">{getCreators()}</div>
             <div className="bottom-box">
               {date ? <p className="date">Publicado: {date}</p> : null}
-              <BuyBtn price={prices[0].price} date={date} />
+              <BuyBtn
+                event={event}
+                price={prices[0].price}
+                setBuyContent={setBuyContent}
+                content={content}
+              />
             </div>
           </div>
         </div>

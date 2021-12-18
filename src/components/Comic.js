@@ -35,7 +35,7 @@ export default class Comic extends React.Component {
         <div className={viewClass}>
           <p className="view-txt">Ver mais</p>
         </div>
-        <img src={url} alt={title} />
+        <img width="216px" height="324px" src={url} alt={title} />
         <p className="title">{title}</p>
       </div>
     );

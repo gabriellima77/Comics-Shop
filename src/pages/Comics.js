@@ -6,7 +6,7 @@ import NextPrev from '../components/NextPrev';
 import SearchBar from '../components/SearchBar';
 import useLoading from '../components/useLoading';
 
-export default function Comics() {
+export default function Comics({ setPage, setBuyContent }) {
   const { isLoading, setIsLoading, getLoading } = useLoading();
   const [comics, setComics] = useState([]);
   const [lastValue, setLastValue] = useState(0);
@@ -24,24 +24,38 @@ export default function Comics() {
     });
   }, [lastValue, setIsLoading, search]);
 
-  const putModal = (comic)=> {
+  const putModal = (comic) => {
     setHasModal(true);
     setModalContent(comic);
-  }
+  };
 
   const getComics = () => {
     const comicsList = comics.map((comic) => {
       const { title, thumbnail, id } = comic;
       const { path, extension } = thumbnail;
       const imgUrl = path + '/portrait_incredible.' + extension;
-      return <Comic putModal={()=> putModal(comic)} key={id} title={title} url={imgUrl} />;
+      return (
+        <Comic
+          putModal={() => putModal(comic)}
+          key={id}
+          title={title}
+          url={imgUrl}
+        />
+      );
     });
     return comicsList;
   };
 
   return (
     <main className="container">
-      {hasModal ? <Modal content={modalContent} setHasModal={setHasModal} /> : null}
+      {hasModal ? (
+        <Modal
+          event={setPage}
+          content={modalContent}
+          setHasModal={setHasModal}
+          setBuyContent={setBuyContent}
+        />
+      ) : null}
       <SearchBar setSearch={setSearchValue} setLastValue={setLastValue} />
       <div className="container row">
         {isLoading ? getLoading() : getComics()}

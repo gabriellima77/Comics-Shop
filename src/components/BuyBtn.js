@@ -1,10 +1,12 @@
-export default function BuyBtn({ price, event }) {
+export default function BuyBtn({ price, event, setBuyContent, content }) {
+
   return (
     <div className="buy-box">
       <p className="price">${price}</p>
       <button
         onClick={() => {
-          event();
+          setBuyContent(content)
+          event('buy');
         }}
         className="buy-btn"
       >
