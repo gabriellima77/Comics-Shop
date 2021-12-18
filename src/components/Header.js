@@ -3,6 +3,7 @@ export default function Header({ page, setPage }) {
     let p = 'home';
     if(e.target.textContent === 'Personagens') p = 'characters';
     else if(e.target.textContent === 'Quadrinhos') p = 'comics';
+    setPage(p);
   };
 
   return (

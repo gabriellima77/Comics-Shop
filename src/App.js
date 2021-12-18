@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
+import Characters from './pages/Characters';
+import Comics from './pages/Comics';
 import Home from './pages/Home';
 
 function App() {
   const [page, setPage] = useState('home');
 
   const switchPage = (page) => {
-    console.log(page);
     switch (page) {
       case 'home':
-        return <Home />;
+        return <Home setPage={setPage} />;
       case 'characters':
-        break;
+        return <Characters />;
       case 'comics':
-        break;
+        return <Comics />;
       default:
         break;
     }
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header page={page} setPage={setPage} />
       {switchPage(page)}
     </div>
   );

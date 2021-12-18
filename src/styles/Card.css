@@ -1,0 +1,32 @@
+.character-card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: rgb(236, 236, 236);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-bar {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgb(220, 220, 220);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 5px 0;
+}
+
+.card-bar p {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  margin: 0;
+}
