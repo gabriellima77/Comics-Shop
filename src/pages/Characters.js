@@ -28,6 +28,7 @@ export default function Characters() {
       const imgUrl = path + '/portrait_xlarge.' + extension;
       return <Card key={id} title={name} url={imgUrl} />;
     });
+    if (cards.length <= 0) return <p>Nada aqui!</p>;
     return cards;
   };
 

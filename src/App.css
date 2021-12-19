@@ -18,7 +18,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: calc(100% - 60px);
+  min-height: calc(100vh - 60px);
 }
 
 .container.hero {
@@ -31,8 +31,9 @@ header {
 
 .hero h1 {
   color: rgb(231, 231, 231);
-  text-shadow: 0 0 10px rgb(0, 0, 0);
-  width: 80%;
+  background: rgba(29, 29, 29, 0.6);
+  width: fit-content;
+  padding: 0 5px;
   margin-bottom: 10%;
 }
 
@@ -56,6 +57,8 @@ header {
   margin-left: 7.5%;
   letter-spacing: 4px;
   color: rgb(204, 204, 204);
+  user-select: none;
+  cursor: pointer;
 }
 
 .links {
@@ -95,15 +98,25 @@ header {
   place-items: center;
   width: 70%;
   height: 100%;
-  background-image: url('./assets/colors-comics-disorder-covers-wallpaper-preview.jpg');
+  background-image: url('./assets/bk-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .btnContainer {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: calc(100vh - 60px);
   width: 40%;
   background-color: rgb(29, 29, 29);
+}
+
+.action-txt {
+  color: rgb(231, 231, 231);
+  margin-bottom: 10%;
+  width: 90%;
 }
 
 .large-box {
@@ -164,6 +177,72 @@ header {
   }
 }
 
+@media (min-width: 1025px) {
+  .bk-img {
+    background-image: url('./assets/bk-img-l.png');
+  }
+
+  .large-btn,
+  .first,
+  .second {
+    height: 50px;
+  }
+
+  .large-btn {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .link {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .bk-img {
+    background-image: url('./assets/bk-img-xl.png');
+  }
+
+  .hero h1 {
+    font-size: 64px;
+  }
+
+  header {
+    height: 120px;
+  }
+
+  .nav-bar h2 {
+    font-size: 45px;
+  }
+
+  .link {
+    font-size: 32px;
+  }
+
+  .container,
+  .btnContainer {
+    min-height: calc(100vh - 120px);
+  }
+
+  .large-btn,
+  .first,
+  .second {
+    height: 80px;
+  }
+
+  .large-btn {
+    width: 300px;
+    padding: 0;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -194,33 +273,44 @@ header {
 }
 
 @media (max-width: 650px) {
-  .container.hero{
+  .container.hero {
     flex-direction: column;
     justify-content: flex-start;
   }
-  .bk-img, .btnContainer {
+
+  .bk-img,
+  .btnContainer {
     width: 100%;
   }
 
   .bk-img {
     height: 80%;
+    background-image: url('./assets/bk-img-m.png');
   }
 
   .btnContainer {
+    flex-direction: row;
     height: 20%;
   }
 
-  .btnContainer{
-    display: flex;
+  .action-txt {
+    width: fit-content;
+    margin: 0;
+    margin-left: 20px;
+    display: none;
+    width: 0;
+    margin: 0;
   }
 
   .large-box {
-    margin-left: auto;
-    margin-right: 10%;
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 630px) {
+}
+
+@media (max-width: 425px) {
   .links ul {
     justify-content: center;
     width: 100%;
@@ -229,5 +319,11 @@ header {
   .link {
     font-size: 14px;
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .large-box {
+    margin: 0 auto;
   }
 }

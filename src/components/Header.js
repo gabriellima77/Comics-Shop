@@ -12,7 +12,7 @@ export default function Header({ page, setPage }) {
 
   return (
     <header className="nav-bar">
-      <h2>Comics-Shop</h2>
+      <h2 onClick={clickEvent}>Comics-Shop</h2>
       <nav className="links">
         <ul>
           <li className={homeClass} onClick={clickEvent}>

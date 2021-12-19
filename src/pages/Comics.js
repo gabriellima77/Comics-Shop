@@ -43,6 +43,7 @@ export default function Comics({ setPage, setBuyContent }) {
         />
       );
     });
+    if (comicsList.length <= 0) return <p>Nada aqui!</p>;
     return comicsList;
   };
 

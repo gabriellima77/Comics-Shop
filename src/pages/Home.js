@@ -9,6 +9,7 @@ export default class Home extends React.Component {
           <h1>O melhor dos quadrinhos está aqui!</h1>
         </div>
         <div className="btnContainer">
+          <h2 className="action-txt">Veja todos as nossas incríveis hqs!</h2>
           <div className="large-box">
             <button className="large-btn" onClick={() => setPage('comics')}>
               Ver os quadrinhos!

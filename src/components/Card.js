@@ -7,7 +7,7 @@ export default function Card({ title, url }) {
       <div className="card-bar">
         <p title={title}>{title}</p>
       </div>
-      <img className="character-img" src={url} alt="title" />
+      <img width="150px" height="225px" className="character-img" src={url} alt="title" />
     </div>
   );
 }

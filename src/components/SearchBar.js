@@ -20,7 +20,11 @@ export default function SearchBar({ setSearch, setLastValue }) {
         className="search"
         type="text"
         placeholder="Burcar"
+        id="search"
       />
+      <label className="icon" htmlFor="search">
+        <i className="fas fa-search"></i>
+      </label>
     </div>
   );
 }
