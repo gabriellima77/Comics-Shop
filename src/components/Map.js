@@ -3,7 +3,7 @@ import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import Geocode from 'react-geocode';
 import { useState } from 'react/cjs/react.development';
 
-export default function Map() {
+export default function Map({ setAddress }) {
   Geocode.setLanguage('pt');
   Geocode.setApiKey('AIzaSyCH-fW8IAwAgyAH4l5Nvk6KauBgjcEWDmk');
   const { isLoaded } = useJsApiLoader({
@@ -11,7 +11,6 @@ export default function Map() {
     googleMapsApiKey: 'AIzaSyCJQIJPpZELHihmeyTXQPanC6CBXHUG7z0',
   });
 
-  const [address, setAddress] = useState('');
   const [position, setPosition] = useState({
     lat: -7.236397,
     lng: -39.312682,
@@ -25,7 +24,7 @@ export default function Map() {
     Geocode.fromLatLng(lat, lng).then(
       (response) => {
         const address = response.results[0].formatted_address;
-        setAddress(address);
+        if (address) setAddress(address);
       },
       (error) => {
         console.error(error);
@@ -40,8 +39,6 @@ export default function Map() {
           mapContainerStyle={{
             width: '100%',
             height: '100%',
-            borderBottomLeftRadius: 10,
-            borderBottomRightRadius: 10,
           }}
           center={position}
           zoom={15}

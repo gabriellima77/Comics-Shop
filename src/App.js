@@ -8,7 +8,7 @@ import Home from './pages/Home';
 
 function App() {
   // Está começando em quadrinhos, para mostrar inicialmente o requisito.
-  const [page, setPage] = useState('comics');
+  const [page, setPage] = useState('home');
   const [buyContent, setBuyContent] = useState('');
 
   const switchPage = (page) => {

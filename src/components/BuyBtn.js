@@ -8,7 +8,7 @@ export default function BuyBtn({ price, event, setBuyContent, content }) {
           setBuyContent(content)
           event('buy');
         }}
-        className="buy-btn"
+        className="confirm-btn"
       >
         Comprar
       </button>
