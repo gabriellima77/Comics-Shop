@@ -59,7 +59,7 @@ header {
 .nav-bar h2 {
   margin: 0;
   margin-left: 7.5%;
-  letter-spacing: 4px;
+  letter-spacing: 0px;
   font-family: 'Bebas Neue', cursive;
   background-color: #ee171f;
   padding: 5px 10px;
@@ -111,7 +111,7 @@ header {
   place-items: center;
   width: 70%;
   height: 100%;
-  background-image: url('./assets/img/bk-img.png');
+  background-image: url('./assets/img/bk-img.webp');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -145,7 +145,8 @@ header {
   border: none;
   background-color: #ee171f;
   cursor: pointer;
-  font-family: Marvel;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
 }
 
 .first,
@@ -193,7 +194,7 @@ header {
 
 @media (min-width: 1025px) {
   .bk-img {
-    background-image: url('./assets/img/bk-img-l.png');
+    background-image: url('./assets/img/bk-img-l.webp');
   }
 
   .large-btn,
@@ -214,7 +215,7 @@ header {
 
 @media (min-width: 1441px) {
   .bk-img {
-    background-image: url('./assets/img/bk-img-xl.png');
+    background-image: url('./assets/img/bk-img-xl.webp');
   }
 
   .hero h1 {
@@ -303,7 +304,7 @@ header {
 
   .bk-img {
     height: 80%;
-    background-image: url('./assets/img/bk-img-m.png');
+    background-image: url('./assets/img/bk-img-m.webp');
   }
 
   .btnContainer {

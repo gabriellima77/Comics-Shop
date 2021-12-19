@@ -105,8 +105,8 @@
   border: none;
   background-color: rgb(21, 151, 21);
   padding: 7px 14px;
-  color: rgb(240, 240, 240);
-  border-radius: 5px;
+  color: white;
+  border-radius: 4px;
   cursor: pointer;
 }
 

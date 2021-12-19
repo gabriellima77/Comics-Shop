@@ -49,7 +49,13 @@ export default function Modal({ content, setHasModal, event, setBuyContent }) {
           </button>
         </div>
         <div className="comic-box">
-          <img src={imgUrl} alt={title} />
+          <img
+            loading="lazy"
+            width="168px"
+            height="252px"
+            src={imgUrl}
+            alt={title}
+          />
           <div className="text-box">
             <h2 className="comic-title" title={title}>
               {title}

@@ -10,20 +10,20 @@ export default function NextPrev({ lastValue, setLastValue }) {
   return (
     <div className="change-images">
       {lastValue <= 0 ? (
-        <button onClick={eventPrev} disabled>
+        <button onClick={eventPrev} aria-label="Prev" disabled>
           <i className="fas fa-arrow-left"></i>
         </button>
       ) : (
-        <button onClick={eventPrev}>
+        <button onClick={eventPrev} aria-label="Prev">
           <i className="fas fa-arrow-left"></i>
         </button>
       )}
       {lastValue >= 1540 ? (
-        <button onClick={eventNext} disabled>
+        <button onClick={eventNext} aria-label="Next" disabled>
           <i className="fas fa-arrow-right"></i>
         </button>
       ) : (
-        <button onClick={eventNext}>
+        <button onClick={eventNext} aria-label="Next">
           <i className="fas fa-arrow-right"></i>
         </button>
       )}
