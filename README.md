@@ -7,6 +7,9 @@ O objetivo desse projeto era criar apenas uma lista de quadrinhos, um modal com 
 
 ## Demo
 
+Se você quer testar a aplicação clique no link abaixo: </br>
+[Sem link por hora](https://google.com.br/)
+
 ### Home Page
 
 ![home page](./demo/home.png)
@@ -27,9 +30,7 @@ O objetivo desse projeto era criar apenas uma lista de quadrinhos, um modal com 
 
 ![personagens](./demo/personagens.png)
 
-</br>
-Se você quer testar a aplicação clique no link abaixo: </br>
- [Sem link por hora](https://google.com.br/)
+
 
 ## Começando
 
