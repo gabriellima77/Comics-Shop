@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Comics-Shop/static/css/main.00eaa31a.css",
+    "main.js": "/Comics-Shop/static/js/main.d4e409a9.js",
+    "static/media/bk-img-xl.webp": "/Comics-Shop/static/media/bk-img-xl.4e0870d0271416c29bbf.webp",
+    "static/media/bk-img-l.webp": "/Comics-Shop/static/media/bk-img-l.91434539f74d1352adbb.webp",
+    "static/media/bk-img.webp": "/Comics-Shop/static/media/bk-img.eb39169aa63a998dd705.webp",
+    "static/media/bk-img-m.webp": "/Comics-Shop/static/media/bk-img-m.ff67628edf6290416a6a.webp",
+    "index.html": "/Comics-Shop/index.html",
+    "main.00eaa31a.css.map": "/Comics-Shop/static/css/main.00eaa31a.css.map",
+    "main.d4e409a9.js.map": "/Comics-Shop/static/js/main.d4e409a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00eaa31a.css",
+    "static/js/main.d4e409a9.js"
+  ]
+}
