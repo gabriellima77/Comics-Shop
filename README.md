@@ -3,7 +3,7 @@
 Uma aplicação onde mostra uma lista de quadrinhos e personagens da Marvel. </br>
 Criado utilizando React, Marvel API e Google Maps API.
 </br>
-O objetivo desse projeto era criar apenas uma lista de quadrinhos, um modal com as informações do quadrinho e um mapa para a escolha do endereço de entrega. Nesse momento a conversão da Longetude e Latitude para endereço não está funcionando, pois eu preciso cadastrar uma conta para o faturamento e o Google ainda está analisando os documento enviados para a confirmação.
+O objetivo desse projeto era criar apenas uma lista de quadrinhos, um modal com as informações do quadrinho e um mapa para a escolha do endereço de entrega.
 
 ## Demo
 

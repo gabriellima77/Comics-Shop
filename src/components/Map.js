@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import Geocode from 'react-geocode';
 
-export default function Map({ setAddress }) {
+export default function Map({ setAddress, setNumber }) {
   Geocode.setLanguage('pt');
   Geocode.setApiKey('AIzaSyCH-fW8IAwAgyAH4l5Nvk6KauBgjcEWDmk');
   const { isLoaded } = useJsApiLoader({
@@ -23,7 +23,10 @@ export default function Map({ setAddress }) {
     Geocode.fromLatLng(lat, lng).then(
       (response) => {
         const address = response.results[0].formatted_address;
-        if (address) setAddress(address);
+        if (address) {
+          setAddress(response.results[0].address_components);
+          setNumber(response.results[0].address_components[0].long_name);
+        }
       },
       (error) => {
         console.error(error);
