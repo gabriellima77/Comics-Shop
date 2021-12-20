@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import Geocode from 'react-geocode';
-import { useState } from 'react/cjs/react.development';
 
 export default function Map({ setAddress }) {
   Geocode.setLanguage('pt');
