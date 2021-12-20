@@ -29,14 +29,15 @@ O objetivo desse projeto era criar apenas uma lista de quadrinhos, um modal com 
 
 </br>
 Se você quer testar a aplicação clique no link abaixo </br>
+[Sem link por hora](https://google.com)
 
 ## Começando
 
 Se você quer cloner esse repositório e fazer alguma modificação ou testes na sua máquina siga os passo abaixo
 
 ```
-git clone repo
-cd repo
+git clone git@github.com:gabriellima77/Comics-Shop.git
+cd Comics-Shop
 npm install
 code .
 npm start
