@@ -8,7 +8,7 @@ O objetivo desse projeto era criar apenas uma lista de quadrinhos, um modal com 
 ## Demo
 
 Se você quer testar a aplicação clique no link abaixo: </br>
-[Sem link por hora](https://google.com.br/)
+[Comics Shop](http://gabriellima77.github.io/Comics-Shop/)
 
 ### Home Page
 
