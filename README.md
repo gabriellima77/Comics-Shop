@@ -7,10 +7,24 @@ O objetivo desse projeto era criar apenas uma lista de quadrinhos, um modal com 
 
 ## Demo
 
+### Home Page
+
 ![home page](./demo/home.png)
+
+### Quadrinhos
+
 ![quadrinhos](./demo/quadrinhos.png)
+
+### Modal
+
 ![modal](./demo/modal.png)
+
+### Compra
+
 ![compra](./demo/compra.png)
+
+### Personagens
+
 ![personagens](./demo/personagens.png)
 
 </br>
