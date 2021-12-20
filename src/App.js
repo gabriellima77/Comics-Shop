@@ -8,7 +8,7 @@ import Home from './pages/Home';
 
 function App() {
   // Está começando em quadrinhos, para mostrar inicialmente o requisito.
-  const [page, setPage] = useState('home');
+  const [page, setPage] = useState('comics');
   const [buyContent, setBuyContent] = useState('');
 
   //mudança de pagina quando há mudança no estado "page"
