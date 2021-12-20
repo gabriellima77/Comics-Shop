@@ -28,8 +28,8 @@ O objetivo desse projeto era criar apenas uma lista de quadrinhos, um modal com 
 ![personagens](./demo/personagens.png)
 
 </br>
-Se você quer testar a aplicação clique no link abaixo </br>
-[Sem link por hora](https://google.com)
+Se você quer testar a aplicação clique no link abaixo: </br>
+ [Sem link por hora](https://google.com.br/)
 
 ## Começando
 
