@@ -20,7 +20,6 @@ export default function Map({ setAddress }) {
     const lat = latLng.lat();
     const lng = latLng.lng();
     setPosition({ lat, lng });
-    console.log(e);
     Geocode.fromLatLng(lat, lng).then(
       (response) => {
         const address = response.results[0].formatted_address;
