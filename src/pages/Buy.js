@@ -16,7 +16,7 @@ export default function Buy({ content }) {
       : 'Cidade Fantasma, Bairro Desconhecido, Rua dos bobos, n° 0';
     return (
       <div className="center-box">
-        <p>A compra de {title} foi comprado com sucesso!</p>
+        <p>A compra de {title} foi feita com sucesso!</p>
         <p>Compra feita por {n}.</p>
         <p>Será entregue no endereço {addss}.</p>
       </div>
